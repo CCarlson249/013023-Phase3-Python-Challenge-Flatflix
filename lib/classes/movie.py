@@ -29,9 +29,9 @@ class Movie:
 
     def average_rating(self):
         if len(self.reviews) == 0:
-            return 0
+            return None
         return sum(review.rating for review in self.reviews) / len(self.reviews)
-        
+
 
     @classmethod
     def highest_rated(cls):

@@ -36,6 +36,7 @@ class Viewer:
             new_review = Review(self, movie, rating)
             self.reviews.append(new_review)
             movie.add_review(new_review, self)
+        if movie not in self.reviewed_movies:
             self.reviewed_movies.append(movie)
 
         
